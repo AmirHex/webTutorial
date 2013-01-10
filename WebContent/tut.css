@@ -1,0 +1,130 @@
+@CHARSET "UTF-8";
+/*
+   tut.css
+   web_tutorial
+   
+   Created by Amir Hejazi on 2011-09-13.
+   Copyright 2011 Amir Hejazi. All rights reserved.
+*/
+p
+{
+    font-family:"Times New Roman";
+    font-style:oblique;
+    color:blue;
+    text-indent:10px;
+    text-align:justify;    
+}
+
+p.out
+{
+    font-family:"Times New Roman";
+    font-style:italic;
+    border-color:#00FFBB;
+    border-width:medium;
+    border-bottom-style:outset;
+    border-top-style:dashed;
+    border-left-style:dotted;
+    border-right-style:inset;
+    text-indent:10px;
+    text-align:justify;
+    
+}
+
+h1
+{
+    font-family:"arial", georgia;
+    color:#BFD940;
+    text-align:center;   
+}
+
+body
+{
+    background-color:#0000000;
+    /* background-image:url("../src/bear.jpg"); */
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:1048pt 768pt;
+}
+
+/* Link customization */
+a:link 
+{
+    color:#0FEE00;
+}
+
+a:visited 
+{
+    color:#00EE00;
+}
+
+a:hover 
+{
+    color:#FF0000;
+    cursor:url;
+}
+
+a:active 
+{
+    color:#FF00FF;
+}
+
+/*list customization */
+ul.links
+{
+    list-style-type:none;
+	margin-right:15px;
+	
+}
+
+li.links{
+	background:#A3FFD6;
+	border-radius:5px;
+	border:outset #A3FFD6;
+}
+
+li.links:hover{
+	box-shadow:2px 2px 5px ;
+	
+}
+
+/* Table customization */
+table
+{
+    border: 2px groove black;
+    /*width: 90%;*/
+    
+}
+th
+{
+	font-size:20px;
+    border: 2px ridge green;
+    background-color: #85E052;
+    color: #003352;
+    height: 30px;
+    padding: 3px;
+    vertical-align: middle;
+    text-align: center;
+}
+td
+{
+    border: 1px solid;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+
+.gallery
+{
+    float:left;
+    width:100px;
+    height:90px;
+    margin:3px;
+}
+
+
+#map{
+	height:200px;
+	width:300px;
+	margin:3px;
+	border:2px outset;
+}

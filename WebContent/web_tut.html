@@ -1,0 +1,61 @@
+<!DOCTYPE  html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Amir's test home page'</title>
+<link rel="stylesheet" type="text/css" href="tut.css"/>
+<script type="text/javascript" src="./JSLib/linkManip.js"></script>
+<script type="text/javascript" src="./JSLib/locationManip.js"></script>
+<script type="text/javascript" src="./JSLib/mapManip.js"></script>
+<script type="text/javascript" src="./JSLib/PrayTimes.js"></script>
+<script type="text/javascript" src="./JSLib/script.js"></script>
+<script type="text/javascript" src="./JSLib/jwplayer/jwplayer.js" ></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBciReWu1vsS0vcpruteCA48pC8Cs0CYok&sensor=false"></script>-->
+</head>
+
+<body>
+<h1 >Welcome To Learn</h1>
+
+ 
+
+<p class="out"> Text with groovy borders :P</p>
+
+
+<p>The following is a photo gallery</p>
+<img class="gallery" src="../src/klematis_small.jpg">
+<img class="gallery" src="../src/klematis2_small.jpg">
+<img class="gallery" src="../src/klematis3_small.jpg">
+<img class="gallery" src="../src/klematis4_small.jpg">
+
+
+
+<div style="clear:both;">
+ <table>
+  <tr>
+   <th>links</th>
+   <th>Preview</th>
+  </tr>
+  
+  <tr>
+   <td>
+    <ul class="links">
+     <li class="links" onclick="linkPreview({'address':'http://www.cs.toronto.edu', 'id':'page-content'})"> Computer Science Department at UofT </li>
+     <li class="links" onclick="linkPreview({'address':'http://www.ieee.org/index.html', 'id':'page-content'})"> IEEE </li> 
+    </ul>
+   </td>
+   <td id="page-content"></td>
+   </tr>
+ </table>
+</div>
+
+<button onclick="checkPrayerTime2( {'id':'prayer', 'path':'./mp3/eyes.mp3'} )"> PlayDoa </button>
+<div id="prayer">Loading...</div>
+
+
+<div id="map" onclick="loadMapLibrary()" style="text-decoration:underline;">[Map it]</div>
+
+</body>
+
+</html>
