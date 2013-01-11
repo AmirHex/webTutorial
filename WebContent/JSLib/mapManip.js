@@ -26,21 +26,22 @@ function showStaticAddress( address ) {
 	//marker.setMap(map);
 	
 	var infowindow = new google.maps.InfoWindow({
-		content:"Take Elevator to fifth floor, and " +
+		content:"<div style='font-size:12px;overflow:auto'>Take Elevator to fifth floor, and " +
 				"look for a half circle in the main " +
-				"hall!.",
-		maxWidth: "10px"
+				"hall!.</div>",
+		maxWidth: "5"
 	});
 	
 	
 	var marker = new google.maps.Marker({
 		position:mycenter,
-		map: map
+		map: map,
+		disableAutoPan:false
 	});
 	
 	//infowindow.open(map,marker);
 	
-	google.maps.event.addListener(marker, 'click', function(){
+	google.maps.event.addListener(marker, 'mouseover', function(){
 		  infowindow.open(map,marker);
 	});
 }
