@@ -19,7 +19,9 @@ function showStaticAddress( address ) {
 	  mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 	
-	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	var div = document.getElementById("map");
+	div.style.visibility = "visible";
+	var map = new google.maps.Map(div, mapOptions);
 	
 	
 	
@@ -41,7 +43,7 @@ function showStaticAddress( address ) {
 	
 	//infowindow.open(map,marker);
 	
-	google.maps.event.addListener(marker, 'mouseover', function(){
+	google.maps.event.addListener(marker, 'click', function(){
 		  infowindow.open(map,marker);
 	});
 }
