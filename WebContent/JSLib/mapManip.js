@@ -16,6 +16,7 @@ function showStaticAddress( address ) {
 	  zoom: 12,
 	  center: mycenter,
 	  disableDefaultUI: true,
+	  streetViewControl:true,
 	  mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 	
