@@ -29,14 +29,14 @@ function showStaticAddress( address ) {
 		content:"<div style='font-size:12px;overflow:auto'>Take Elevator to fifth floor, and " +
 				"look for a half circle in the main " +
 				"hall!.</div>",
-		maxWidth: "5"
+		maxWidth: "5", 
+		disableAutoPan:false
 	});
 	
 	
 	var marker = new google.maps.Marker({
 		position:mycenter,
 		map: map,
-		disableAutoPan:false
 	});
 	
 	//infowindow.open(map,marker);
