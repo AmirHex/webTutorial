@@ -47,7 +47,7 @@ function loadMapLibrary() {
 function showStaticAddress( id, address ) {
 	//var mycenter=new google.maps.LatLng( 43.65960972192819, -79.39695954322815);
 	var mapOptions = {
-	  zoom: 18,
+	  zoom: 17,
 	  center: address.LatLng,
 	  disableDefaultUI: true,
 	  streetViewControl:true,
