@@ -130,14 +130,17 @@ td
 	visibility:hidden;
 }
 
-#tile{
-	position:absolute;
-	left:500px;
-	top:500px;
+.tile{
+	/*display:inline;*/
+	float:left;
+	position:relative;
+	left:50px;
+	top:20px;
 	border:2px outset;
 	border-radius:5px;
 	/*background:#80FF99;*/
 	border-shadow: 5px 5px 2px ;
+	margin:1%;
 	width:150px;
 	height:150px; 
 	background: -webkit-radial-gradient(50% 50%, circle, #66FF66, #99FFCC);
@@ -147,30 +150,14 @@ td
 	-o-transition:width height 5s; /* Opera */
 }
 
-@keyframes expand{
-	0%{width:150px;height:150px;}
-	to{width:300px;height:300px;}
-}
 
-@-moz-keyframes expand{
-	0%{width:150px;height:150px;}
-	to{width:300px;height:300px;}
-}
 
-@-webkit-keyframes expand{
-	0%{width:150px;height:150px;}
-	to{width:300px;height:300px;}
-}
-
-@-o-keyframes expand{
-	0%{width:150px;height:150px;}
-	to{width:300px;height:300px;}
-}
-
-#tile:hover{
+.tile:hover{
 	
-	animation:expand 5s;
-	-moz-animation:expand 5s;
-	-webkit-animation:expand 5s;
-	-o-animation:expand 5s;
+	transform: scale(1.2, 1.2);
+	-ms-transform: scale(1.2, 1.2); /* IE 9 */
+	-moz-transform: scale(1.2, 1.2); /* Firefox */
+	-webkit-transform: scale(1.2, 1.2); /* Safari and Chrome */
+	-o-transform: scale(1.2, 1.2); /* Opera */
+	background: -webkit-radial-gradient(50% 50%, circle, #33CCFF, #00FFCC);
 }
